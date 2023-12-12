@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trycash</title>
+</head>
+<body>
+    <h2>My First Web Page</h2>
+    <p>My first Web Page</p>
+
+    <p id="demo"></p>
+
+    <script>
+        try{
+            lalala; //error,variable is not define!
+        } catch (err){
+            alert(err.name);  //ReferenceError
+            alert(err.message);  //lalala is not defined
+            alert(err.stack);
+            //ReferenceError: lalala is not define st (...call stack)
+
+            // Can also show an error as a whole
+            //The erro is converted to string as "name: message"
+            alert(err); //ReferceError: lalala is not defined
+        }
+    </script>
+</body>
+</html>
